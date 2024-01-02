@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <style>
+        body {
+            background-color: #cce6ff;
+        }
+
+        header {
+            text-align: center;
+            height: 100px;
+            padding-top: 1px;
+            background-color: #3399ff;
+            color: #ffffff;
+            font-size: x-large;
+        }
+
+        h3 {
+            margin-top: 2px;
+            text-align: center;
+            background-color: #80bfff;
+        }
+
+        form {
+            width: 50%;
+            margin: 20px;
+            margin-left: 25%;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        .col1 {
+            width: 200px;
+        }
+
+        fieldset {
+            background-color: #ffffff;
+            max-width: 500px;
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>STUDENT REGISTER</h1>
+    </header>
+    <form action="/" method="POST">
+        <fieldset>
+            <h3>Add New Student</h3>
+            <table>
+                <tr>
+                    <td class="col1"><label>First Name</label></td>
+                    <td><input type="text" name="fname" placeholder="Enter first name" required></td>
+                </tr>
+                <tr>
+                    <td class="col1"><label>Last Name</label></td>
+                    <td><input type="text" name="lname" placeholder="Enter Last name" required> </td>
+                </tr>
+                <tr>
+                    <td class="col1"><label>Email</label></td>
+                    <td><input type="email" name="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td class="col1"><label>Contact Number</label></td>
+                    <td><input type="number" name="contno" placeholder="Enter contact number" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;padding-top: 50px;"><button type="submit"
+                            class="btn">Submit</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
